@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-import { errJoi, errNotJoi } from './middlewares/genericErrors';
+import { errNotJoi } from './middlewares/genericErrors';
 import LoginRoute from './routers/login.route'
 
 class App {
@@ -18,7 +18,7 @@ class App {
     this.app.use('/login', LoginRoute)
 
     // Error Middlwares
-    this.app.use(errJoi);
+    // this.app.use(errJoi);
     this.app.use(errNotJoi);
   }
 

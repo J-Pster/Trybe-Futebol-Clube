@@ -1,3 +1,4 @@
+/*
 export const JoiStatus: { [key: string]: number } = {
   'string.empty': 404,
   'string.email': 400,
@@ -10,3 +11,4 @@ export const JoiStatus: { [key: string]: number } = {
   'number.base': 422,
   'array.base': 422,
 };
+*/

@@ -1,7 +1,8 @@
 import { ErrorRequestHandler } from 'express';
 import { NotJoiStatus } from './errorTypes/NotJoi';
-import { JoiStatus } from './errorTypes/Joi';
+// import { JoiStatus } from './errorTypes/Joi';
 
+/* NÃO ESTAMOS USANDO NENHUM ERO DE JOI!
 const errJoi : ErrorRequestHandler = (err, _req, res, next): void => {
   // Se for um erro Joi
   console.log('Bateu no De Joi!');
@@ -15,6 +16,7 @@ const errJoi : ErrorRequestHandler = (err, _req, res, next): void => {
   
   res.status(status).json({ message: err.message });
 };
+*/
   
 const errNotJoi : ErrorRequestHandler = (err, _req, res, _next): void => {
   console.log('Bateu no Sem Joi!');
@@ -22,12 +24,11 @@ const errNotJoi : ErrorRequestHandler = (err, _req, res, _next): void => {
   console.table(err);
   console.log(err);
   
-  const status: number = NotJoiStatus[err.code] || 500;
+  const status: number = NotJoiStatus[err.code];
   
   res.status(status).json({ message: err.message });
 };
 
 export {
-  errJoi,
   errNotJoi,
 };
