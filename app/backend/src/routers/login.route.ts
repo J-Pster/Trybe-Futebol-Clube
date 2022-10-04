@@ -5,9 +5,11 @@ const rescue = require('express-rescue')
 import UserController from "../controllers/user.controller";
 import GenericController from "../controllers/generic.controller";
 import JoiBodyVals from "../middlewares/JoiBodyVals";
+import JoiParamVals from "../middlewares/JoiParamVals";
 
 const userController = new UserController();
 const joiBodyVals = new JoiBodyVals();
+const joiParamVals = new JoiParamVals();
 const route = Router();
 
 // Na Collection
@@ -28,7 +30,10 @@ route.delete('/', rescue(GenericController.notAllowed))
 
 route.post('/validate', rescue(GenericController.notAllowed));
 
-route.get('/validate', rescue(GenericController.notAllowed));
+route.get('/validate', [
+  joiParamVals.validateToken,
+  rescue(userController.validate)
+]);
 
 route.put('/validate', rescue(GenericController.notAllowed));
 

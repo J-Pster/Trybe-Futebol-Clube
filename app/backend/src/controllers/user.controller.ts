@@ -14,4 +14,11 @@ export default class UserController {
 
     return res.status(StatusCodes.OK).json({ token: result });
   }
+
+  public validate: RequestHandler = async (req, res, next) => {
+    const token = req.headers.authorization as string;
+    const result = await this._service.validate(token);
+
+    return res.status(StatusCodes.OK).json({ role: result });
+  }
 }

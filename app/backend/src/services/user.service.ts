@@ -23,4 +23,13 @@ export default class UserService {
 ;
     return this._jwtInst.create(user);
   }
+
+  public async validate(token: string): Promise<string> {
+    const {email} = this._jwtInst.validate(token);
+  
+    const validUser = await this._model.findOne(email);
+    if(!validUser) throw new PError('jwt', 'Incorrect email or password');
+
+    return validUser.role;
+  }
 }
