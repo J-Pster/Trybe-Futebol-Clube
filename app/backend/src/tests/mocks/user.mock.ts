@@ -19,24 +19,28 @@ export const user = {
 }
 
 export const login = {
-  validAdmin: {
+  existAdmin: {
     email: 'admin@admin.com',
     password: 'secret_admin',
   },  
-  validUser: {
+  existUser: {
     email: 'user@user.com',
     password: 'secret_user',
-  },
-  invalidPassword: {
-    email: 'user@user.com',
-    password: 'senha_invalida',
   },
   invalidEmail: {
     email: 'user@xablaucom',
     password: 'senha_invalida',
   },
-  invalidUser: {
+  invalidPassword: {
     email: 'user@xablau.com',
+    password: 's',
+  },
+  wrongEmail: {
+    email: 'user@xablau.com',
+    password: 'senha_invalida',
+  },
+  wrongPassword: {
+    email: 'user@user.com',
     password: 'senha_invalida',
   },
 }
