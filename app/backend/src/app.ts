@@ -15,7 +15,7 @@ class App {
     this.app.get('/', (req, res) => res.json({ ok: true }));
 
     // Routes
-    this.app.use(LoginRoute)
+    this.app.use('/login', LoginRoute)
 
     // Error Middlwares
     this.app.use(errJoi);

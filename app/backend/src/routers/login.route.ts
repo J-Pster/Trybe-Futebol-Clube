@@ -1,5 +1,5 @@
 import { Router } from "express";
-import rescue from 'express-rescue'
+const rescue = require('express-rescue')
 
 
 import UserController from "../controllers/user.controller";
@@ -11,9 +11,10 @@ const joiBodyVals = new JoiBodyVals();
 const route = Router();
 
 // Na Collection
+// Teste
 
 route.post('/', [
-  rescue(joiBodyVals.validateUser),
+  joiBodyVals.validateUser,
   rescue(userController.login)
 ])
 

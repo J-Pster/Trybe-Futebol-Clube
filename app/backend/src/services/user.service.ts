@@ -14,6 +14,7 @@ export default class UserService {
   ) {}
 
   public async login(user: IUserLogin): Promise<string> {
+    console.log('Validando Usuário!')
     const validUser = await this._model.findOne(user.email);
     if(!validUser) throw new PError('jwt', 'Incorrect email or password');
 
