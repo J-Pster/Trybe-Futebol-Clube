@@ -1,5 +1,8 @@
 import * as express from 'express';
 
+import { errJoi, errNotJoi } from './middlewares/genericErrors';
+import LoginRoute from './routers/login.route'
+
 class App {
   public app: express.Express;
 
@@ -10,6 +13,13 @@ class App {
 
     // Não remover essa rota
     this.app.get('/', (req, res) => res.json({ ok: true }));
+
+    // Routes
+    this.app.use(LoginRoute)
+
+    // Error Middlwares
+    this.app.use(errJoi);
+    this.app.use(errNotJoi);
   }
 
   private config():void {
