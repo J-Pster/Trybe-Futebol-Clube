@@ -2,6 +2,7 @@ import * as express from 'express';
 
 import { errNotJoi } from './middlewares/genericErrors';
 import LoginRoute from './routers/login.route'
+import TeamRoute from './routers/team.route'
 
 class App {
   public app: express.Express;
@@ -16,6 +17,7 @@ class App {
 
     // Routes
     this.app.use('/login', LoginRoute)
+    this.app.use('/teams', TeamRoute)
 
     // Error Middlwares
     // this.app.use(errJoi);
