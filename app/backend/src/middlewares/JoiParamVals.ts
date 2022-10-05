@@ -12,16 +12,35 @@ export default class JoiParamVals {
     next();
   }
 
-  public validateTeamId:RequestHandler = (req, _res, next): boolean | void => {
+  public validateId:RequestHandler = (req, _res, next): boolean | void => {
     const { id } = req.params;
+    const idVal = Number(id);
     
     const schema = Joi.object({
-      id: Joi.number().required(),
+      idVal: Joi.number().required(),
     });
 
-    const { error } = schema.validate({ id });
+    const { error } = schema.validate({ idVal });
 
     if (error) return next(new PError('badRequest', 'ID must be a valid ID'));
+
+    next();
+  }
+
+  public validateMatchParams:RequestHandler = (req, _res, next): boolean | void => {
+    const { inProgress } = req.query;
+    // Caso seja um get sem inProgress
+    if(!inProgress) return next();
+
+    const progress = inProgress === 'true';
+
+    const schema = Joi.object({
+      progress: Joi.boolean().required(),
+    });
+
+    const { error } = schema.validate({ progress });
+
+    if (error) return next(new PError('badRequest', 'inProgress must be a valid boolean'));
 
     next();
   }
