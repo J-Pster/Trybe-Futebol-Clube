@@ -15,6 +15,16 @@ export default class UserModel {
     return result;
   }
 
+  public async findByPk(id: number): Promise<IMatch | null> {
+    const result = await this._model.findByPk(id, {
+      include: [
+        { model: Team, as: 'teamHome', attributes: ['teamName'] },
+        { model: Team, as: 'teamAway', attributes: ['teamName'] },
+      ]
+    });
+    return result;
+  }
+
   public async findByProgress(progress: boolean): Promise<IMatch[] | null> {
     const result = await this._model.findAll({
       where: { progress },
