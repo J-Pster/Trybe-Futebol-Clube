@@ -2,8 +2,7 @@ import { compareSync } from 'bcryptjs';
 import JWT from '../middlewares/GenerateToken';
 
 import { IUserLogin } from '../interfaces/user.interface';
-import { IJwt } from '../interfaces/jwt.interface';
-import { PError, IError } from '../interfaces/error.interface';
+import { PError } from '../interfaces/error.interface';
 
 import UserModel from '../models/user.model';
 
