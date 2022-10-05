@@ -28,7 +28,7 @@ route.delete('/', rescue(GenericController.notAllowed))
 route.post('/:id', rescue(GenericController.notAllowed));
 
 route.get('/:id', [
-  joiParamVals.validateTeamId,
+  joiParamVals.validateId,
   rescue(teamController.findOne)
 ]);
 
