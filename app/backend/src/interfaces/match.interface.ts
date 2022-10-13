@@ -7,8 +7,8 @@ export interface IMScore {
 
 // O Input de dados
 export interface IMInput extends IMScore{
-  homeTeam: number;
-  awayTeam: number;
+  homeTeam: number | string;
+  awayTeam: number | string;
 }
 
 // A partida em sí, que tem o score e o input completinho

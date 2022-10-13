@@ -15,7 +15,7 @@ const route = Router();
 // Na Collection
 
 route.post('/', [
-  joiParamVals.validateToken,
+  rescue(joiParamVals.validateToken),
   joiBodyVals.validateMatchBody,
   joiBodyVals.validateTeamIds,
   rescue(matchController.create)
@@ -41,7 +41,7 @@ route.put('/:id', rescue(GenericController.notAllowed));
 route.delete('/:id', rescue(GenericController.notAllowed));
 
 route.patch('/:id', [
-  joiParamVals.validateToken,
+  joiParamVals.validateTokenExists,
   joiParamVals.validateId,
   rescue(matchController.updateScore)
 ]);
@@ -49,7 +49,7 @@ route.patch('/:id', [
 // No Recurso com função especial
 
 route.patch('/:id/finish', [
-  joiParamVals.validateToken,
+  joiParamVals.validateTokenExists,
   joiParamVals.validateId,
   rescue(matchController.finish)
 ]);

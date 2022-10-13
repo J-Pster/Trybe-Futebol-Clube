@@ -13,9 +13,13 @@ export default class TeamService {
     return result;
   }
 
-  public async findOne(id: string): Promise<ITeam> {
+  public async findOne(id: string): Promise<ITeam | null> {
     const result = await this._model.findOne(Number(id));
-    if (!result) throw new PError('auth', 'ID de Time Inválido');
+    return result;
+  }
+
+  public async findByName(name: string): Promise<ITeam | null> {
+    const result = await this._model.findByName(name);
     return result;
   }
 }

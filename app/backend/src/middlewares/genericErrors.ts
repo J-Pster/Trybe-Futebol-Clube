@@ -24,6 +24,8 @@ const errNotJoi : ErrorRequestHandler = (err, _req, res, _next): void => {
   console.table(err);
   console.log(err);
   
+  if(err.name && err.name === 'JsonWebTokenError') res.status(401).json({ message: 'Token must be a valid token' });
+
   const status: number = NotJoiStatus[err.code];
   
   res.status(status).json({ message: err.message });

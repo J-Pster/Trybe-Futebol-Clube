@@ -31,7 +31,7 @@ route.delete('/', rescue(GenericController.notAllowed))
 route.post('/validate', rescue(GenericController.notAllowed));
 
 route.get('/validate', [
-  joiParamVals.validateToken,
+  joiParamVals.validateTokenExists,
   rescue(userController.validate)
 ]);
 

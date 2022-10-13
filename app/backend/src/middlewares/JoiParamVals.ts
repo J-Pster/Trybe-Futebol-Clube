@@ -2,13 +2,25 @@ import * as Joi from 'joi';
 import { RequestHandler } from 'express';
 
 import { PError } from '../interfaces/error.interface';
+import JWT from './GenerateToken';
 
 export default class JoiParamVals {
-  constructor() {}
+  constructor(private _jwt: JWT = new JWT()) {}
+
+  public validateTokenExists:RequestHandler = (req, _res, next): boolean | void => {
+    const token = req.headers.authorization;
+    if(!token) return next(new PError('jwt', 'Token must be a valid token'));
+
+    next();
+  }
 
   public validateToken:RequestHandler = (req, _res, next): boolean | void => {
     const token = req.headers.authorization;
     if(!token) return next(new PError('jwt', 'Token must be a valid token'));
+
+    const { data } = this._jwt.validate(token);
+    console.log('DATA: ', data);
+    
     next();
   }
 

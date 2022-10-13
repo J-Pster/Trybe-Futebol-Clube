@@ -2,11 +2,22 @@ import Match from '../database/models/Match';
 import Team from '../database/models/Team';
 import { IMatch, IMInput, IMScore } from '../interfaces/match.interface';
 
-export default class UserModel {
+export default class MatchModel {
   constructor(private _model: typeof Match = Match) {}
 
   public async findAll(): Promise<IMatch[] | null> {
     const result = await this._model.findAll({
+      include: [
+        { model: Team, as: 'teamHome', attributes: ['teamName'] },
+        { model: Team, as: 'teamAway', attributes: ['teamName'] },
+      ]
+    });
+    return result;
+  }
+
+  public async findOne(name: string): Promise<IMatch | null> {
+    const result = await this._model.findOne({
+      where: { name },
       include: [
         { model: Team, as: 'teamHome', attributes: ['teamName'] },
         { model: Team, as: 'teamAway', attributes: ['teamName'] },
@@ -25,9 +36,9 @@ export default class UserModel {
     return result;
   }
 
-  public async findByProgress(progress: boolean): Promise<IMatch[] | null> {
+  public async findByProgress(inProgress: boolean): Promise<IMatch[] | null> {
     const result = await this._model.findAll({
-      where: { progress },
+      where: { inProgress },
       include: [
         { model: Team, as: 'teamHome', attributes: ['teamName'] },
         { model: Team, as: 'teamAway', attributes: ['teamName'] },
