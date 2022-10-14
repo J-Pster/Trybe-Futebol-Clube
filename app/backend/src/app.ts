@@ -5,6 +5,8 @@ import LoginRoute from './routers/login.route'
 import TeamRoute from './routers/team.route'
 import MatchRoute from './routers/match.route'
 
+// Feito por Pster
+
 class App {
   public app: express.Express;
 
