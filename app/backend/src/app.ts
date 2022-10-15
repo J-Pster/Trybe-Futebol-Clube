@@ -4,6 +4,7 @@ import { errNotJoi } from './middlewares/genericErrors';
 import LoginRoute from './routers/login.route'
 import TeamRoute from './routers/team.route'
 import MatchRoute from './routers/match.route'
+import LeaderRoute from './routers/leader.route'
 
 // Feito por Pster
 
@@ -16,12 +17,13 @@ class App {
     this.config();
 
     // Não remover essa rota
-    this.app.get('/', (req, res) => res.json({ ok: true }));
+    this.app.get('/', (_req, res) => res.json({ ok: true }));
 
     // Routes
     this.app.use('/login', LoginRoute)
     this.app.use('/teams', TeamRoute)
     this.app.use('/matches', MatchRoute)
+    this.app.use('/leaderboard', LeaderRoute)
 
     // Error Middlwares
     // this.app.use(errJoi);
