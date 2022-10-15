@@ -9,7 +9,7 @@ export const awayLeaderboard = [
     goalsOwn: 0,
     totalGames: 2,
     goalsBalance: 7,
-    efficiency: "100.00"
+    efficiency: 100
   },
   {
     name: "Corinthians",
@@ -21,7 +21,7 @@ export const awayLeaderboard = [
     goalsOwn: 2,
     totalGames: 3,
     goalsBalance: 4,
-    efficiency: "66.67"
+    efficiency: 66.67
   },
   {
     name: "Internacional",
@@ -33,7 +33,7 @@ export const awayLeaderboard = [
     goalsOwn: 0,
     totalGames: 2,
     goalsBalance: 3,
-    efficiency: "100.00"
+    efficiency: 100
   },
   {
     name: "São José-SP",
@@ -45,7 +45,7 @@ export const awayLeaderboard = [
     goalsOwn: 1,
     totalGames: 2,
     goalsBalance: 2,
-    efficiency: "100.00"
+    efficiency: 100
   },
   {
     name: "São Paulo",
@@ -57,7 +57,7 @@ export const awayLeaderboard = [
     goalsOwn: 5,
     totalGames: 3,
     goalsBalance: 0,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Ferroviária",
@@ -69,7 +69,7 @@ export const awayLeaderboard = [
     goalsOwn: 5,
     totalGames: 3,
     goalsBalance: -1,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Real Brasília",
@@ -81,7 +81,7 @@ export const awayLeaderboard = [
     goalsOwn: 4,
     totalGames: 3,
     goalsBalance: -1,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Grêmio",
@@ -93,7 +93,7 @@ export const awayLeaderboard = [
     goalsOwn: 7,
     totalGames: 3,
     goalsBalance: -2,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Flamengo",
@@ -105,7 +105,7 @@ export const awayLeaderboard = [
     goalsOwn: 3,
     totalGames: 3,
     goalsBalance: -2,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Avaí/Kindermann",
@@ -117,7 +117,7 @@ export const awayLeaderboard = [
     goalsOwn: 1,
     totalGames: 2,
     goalsBalance: 0,
-    efficiency: "50.00"
+    efficiency: 50.00
   },
   {
     name: "Cruzeiro",
@@ -129,7 +129,7 @@ export const awayLeaderboard = [
     goalsOwn: 7,
     totalGames: 3,
     goalsBalance: -1,
-    efficiency: "33.33"
+    efficiency: 33.33
   },
   {
     name: "Santos",
@@ -141,7 +141,7 @@ export const awayLeaderboard = [
     goalsOwn: 3,
     totalGames: 2,
     goalsBalance: 0,
-    efficiency: "33.33"
+    efficiency: 33.33
   },
   {
     name: "Bahia",
@@ -153,7 +153,7 @@ export const awayLeaderboard = [
     goalsOwn: 2,
     totalGames: 2,
     goalsBalance: 0,
-    efficiency: "33.33"
+    efficiency: 33.33
   },
   {
     name: "Minas Brasília",
@@ -165,7 +165,7 @@ export const awayLeaderboard = [
     goalsOwn: 3,
     totalGames: 2,
     goalsBalance: -2,
-    efficiency: "16.67"
+    efficiency: 16.67
   },
   {
     name: "Botafogo",
@@ -177,7 +177,7 @@ export const awayLeaderboard = [
     goalsOwn: 4,
     totalGames: 2,
     goalsBalance: -3,
-    efficiency: "0.00"
+    efficiency: 0.00
   },
   {
     name: "Napoli-SC",
@@ -189,7 +189,7 @@ export const awayLeaderboard = [
     goalsOwn: 10,
     totalGames: 3,
     goalsBalance: -9,
-    efficiency: "0.00"
+    efficiency: 0.00
   }
 ]
 
@@ -204,7 +204,7 @@ export const homeLeaderboard = [
     goalsOwn: 3,
     totalGames: 3,
     goalsBalance: 6,
-    efficiency: "100.00"
+    efficiency: 100.00
   },
   {
     name: "Palmeiras",
@@ -216,7 +216,7 @@ export const homeLeaderboard = [
     goalsOwn: 5,
     totalGames: 3,
     goalsBalance: 5,
-    efficiency: "77.78"
+    efficiency: 77.78
   },
   {
     name: "Corinthians",
@@ -228,7 +228,7 @@ export const homeLeaderboard = [
     goalsOwn: 1,
     totalGames: 2,
     goalsBalance: 5,
-    efficiency: "100.00"
+    efficiency: 100.00
   },
   {
     name: "Grêmio",
@@ -240,7 +240,7 @@ export const homeLeaderboard = [
     goalsOwn: 1,
     totalGames: 2,
     goalsBalance: 3,
-    efficiency: "100.00"
+    efficiency: 100.00
   },
   {
     name: "Real Brasília",
@@ -252,7 +252,7 @@ export const homeLeaderboard = [
     goalsOwn: 0,
     totalGames: 2,
     goalsBalance: 2,
-    efficiency: "100.00"
+    efficiency: 100.00
   },
   {
     name: "São Paulo",
@@ -264,7 +264,7 @@ export const homeLeaderboard = [
     goalsOwn: 1,
     totalGames: 2,
     goalsBalance: 3,
-    efficiency: "66.67"
+    efficiency: 66.67
   },
   {
     name: "Internacional",
@@ -276,7 +276,7 @@ export const homeLeaderboard = [
     goalsOwn: 6,
     totalGames: 3,
     goalsBalance: -2,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Botafogo",
@@ -288,7 +288,7 @@ export const homeLeaderboard = [
     goalsOwn: 4,
     totalGames: 3,
     goalsBalance: -2,
-    efficiency: "44.44"
+    efficiency: 44.44
   },
   {
     name: "Ferroviária",
@@ -300,7 +300,7 @@ export const homeLeaderboard = [
     goalsOwn: 2,
     totalGames: 2,
     goalsBalance: 1,
-    efficiency: "50.00"
+    efficiency: 50.00
   },
   {
     name: "Napoli-SC",
@@ -312,7 +312,7 @@ export const homeLeaderboard = [
     goalsOwn: 2,
     totalGames: 2,
     goalsBalance: 0,
-    efficiency: "33.33"
+    efficiency: 33.33
   },
   {
     name: "Cruzeiro",
@@ -324,7 +324,7 @@ export const homeLeaderboard = [
     goalsOwn: 3,
     totalGames: 2,
     goalsBalance: -1,
-    efficiency: "16.67"
+    efficiency: 16.67
   },
   {
     name: "Flamengo",
@@ -336,7 +336,7 @@ export const homeLeaderboard = [
     goalsOwn: 2,
     totalGames: 2,
     goalsBalance: -1,
-    efficiency: "16.67"
+    efficiency: 16.67
   },
   {
     name: "Minas Brasília",
@@ -348,7 +348,7 @@ export const homeLeaderboard = [
     goalsOwn: 6,
     totalGames: 3,
     goalsBalance: -3,
-    efficiency: "11.11"
+    efficiency: 11.11
   },
   {
     name: "Avaí/Kindermann",
@@ -360,7 +360,7 @@ export const homeLeaderboard = [
     goalsOwn: 7,
     totalGames: 3,
     goalsBalance: -4,
-    efficiency: "11.11"
+    efficiency: 11.11
   },
   {
     name: "São José-SP",
@@ -372,7 +372,7 @@ export const homeLeaderboard = [
     goalsOwn: 5,
     totalGames: 3,
     goalsBalance: -3,
-    efficiency: "0.00"
+    efficiency: 0
   },
   {
     name: "Bahia",
@@ -384,7 +384,7 @@ export const homeLeaderboard = [
     goalsOwn: 4,
     totalGames: 3,
     goalsBalance: -4,
-    efficiency: "0.00"
+    efficiency: 0
   }
 ]
 
@@ -399,7 +399,7 @@ export const leaderBoard = [
     goalsOwn: 5,
     totalGames: 5,
     goalsBalance: 12,
-    efficiency: "86.67"
+    efficiency: 86.67
   },
   {
     name: "Corinthians",
@@ -411,7 +411,7 @@ export const leaderBoard = [
     goalsOwn: 3,
     totalGames: 5,
     goalsBalance: 9,
-    efficiency: "80.00"
+    efficiency: 80
   },
   {
     name: "Santos",
@@ -423,7 +423,7 @@ export const leaderBoard = [
     goalsOwn: 6,
     totalGames: 5,
     goalsBalance: 6,
-    efficiency: "73.33"
+    efficiency: 73.33
   },
   {
     name: "Grêmio",
@@ -435,7 +435,7 @@ export const leaderBoard = [
     goalsOwn: 8,
     totalGames: 5,
     goalsBalance: 1,
-    efficiency: "66.67"
+    efficiency: 66.67
   },
   {
     name: "Internacional",
@@ -447,7 +447,7 @@ export const leaderBoard = [
     goalsOwn: 6,
     totalGames: 5,
     goalsBalance: 1,
-    efficiency: "66.67"
+    efficiency: 66.67
   },
   {
     name: "Real Brasília",
@@ -459,7 +459,7 @@ export const leaderBoard = [
     goalsOwn: 4,
     totalGames: 5,
     goalsBalance: 1,
-    efficiency: "66.67"
+    efficiency: 66.67
   },
   {
     name: "São Paulo",
@@ -471,7 +471,7 @@ export const leaderBoard = [
     goalsOwn: 6,
     totalGames: 5,
     goalsBalance: 3,
-    efficiency: "53.33"
+    efficiency: 53.33
   },
   {
     name: "Ferroviária",
@@ -483,7 +483,7 @@ export const leaderBoard = [
     goalsOwn: 7,
     totalGames: 5,
     goalsBalance: 0,
-    efficiency: "46.67"
+    efficiency: 46.67
   },
   {
     name: "São José-SP",
@@ -495,7 +495,7 @@ export const leaderBoard = [
     goalsOwn: 6,
     totalGames: 5,
     goalsBalance: -1,
-    efficiency: "40.00"
+    efficiency: 40.00
   },
   {
     name: "Flamengo",
@@ -507,7 +507,7 @@ export const leaderBoard = [
     goalsOwn: 5,
     totalGames: 5,
     goalsBalance: -3,
-    efficiency: "33.33"
+    efficiency: 33.33
   },
   {
     name: "Cruzeiro",
@@ -519,7 +519,7 @@ export const leaderBoard = [
     goalsOwn: 10,
     totalGames: 5,
     goalsBalance: -2,
-    efficiency: "26.67"
+    efficiency: 26.67
   },
   {
     name: "Avaí/Kindermann",
@@ -531,7 +531,7 @@ export const leaderBoard = [
     goalsOwn: 8,
     totalGames: 5,
     goalsBalance: -4,
-    efficiency: "26.67"
+    efficiency: 26.67
   },
   {
     name: "Botafogo",
@@ -543,7 +543,7 @@ export const leaderBoard = [
     goalsOwn: 8,
     totalGames: 5,
     goalsBalance: -5,
-    efficiency: "26.67"
+    efficiency: 26.67
   },
   {
     name: "Bahia",
@@ -555,7 +555,7 @@ export const leaderBoard = [
     goalsOwn: 6,
     totalGames: 5,
     goalsBalance: -4,
-    efficiency: "13.33"
+    efficiency: 13.33
   },
   {
     name: "Minas Brasília",
@@ -567,7 +567,7 @@ export const leaderBoard = [
     goalsOwn: 9,
     totalGames: 5,
     goalsBalance: -5,
-    efficiency: "13.33"
+    efficiency: 13.33
   },
   {
     name: "Napoli-SC",
@@ -579,6 +579,6 @@ export const leaderBoard = [
     goalsOwn: 12,
     totalGames: 5,
     goalsBalance: -9,
-    efficiency: "13.33"
+    efficiency: 13.33
   }
 ]
